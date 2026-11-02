@@ -1,1 +1,2280 @@
-
+[
+    {
+        "id": "8984d1449a19743c",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8e25b9e531aaf842",
+        "type": "tab",
+        "label": "Simulator Ruang 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d2888a2e3bbc694b",
+        "type": "tab",
+        "label": "Dashboard IoT Kelompok 7",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cabdfbcffdf89581",
+        "type": "mqtt-broker",
+        "name": "MQTT Broker Kelompok 7",
+        "broker": "127.0.0.1",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6c3e0c3b4816f114",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "7c36c7f2ee65e698",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#fcfcfd",
+            "primary": "#0d74ce",
+            "bgPage": "#f9f9fb",
+            "groupBg": "#ffffff",
+            "groupOutline": "#d9d9e0"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "57bde0c0dd3d45f1",
+        "type": "ui-page",
+        "name": "IoT Smart Room - Kelompok 7",
+        "ui": "6c3e0c3b4816f114",
+        "path": "iot-smart-room",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "7c36c7f2ee65e698",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "tabs": [],
+        "order": 1,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "fa4b0259c1e34586",
+        "type": "ui-group",
+        "name": "Monitoring Ruangan",
+        "page": "57bde0c0dd3d45f1",
+        "width": "12",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "68e89b629b9ecb39",
+        "type": "ui-group",
+        "name": "Grafik Suhu",
+        "page": "57bde0c0dd3d45f1",
+        "width": "12",
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "d45eee8820368bcd",
+        "type": "ui-group",
+        "name": "Kontrol Lampu",
+        "page": "57bde0c0dd3d45f1",
+        "width": "6",
+        "height": 1,
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "0606a269c0667ab2",
+        "type": "ui-group",
+        "name": "Status Perangkat",
+        "page": "57bde0c0dd3d45f1",
+        "width": "6",
+        "height": "1",
+        "order": 6,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "ffc22011bd4773e7",
+        "type": "ui-group",
+        "name": "Monitoring Kelembapan",
+        "page": "57bde0c0dd3d45f1",
+        "width": "12",
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "d9a1cef11dfc343d",
+        "type": "ui-group",
+        "name": "Status Lampu",
+        "page": "57bde0c0dd3d45f1",
+        "width": 6,
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "e83431ea25067ee3",
+        "type": "mqtt in",
+        "z": "8984d1449a19743c",
+        "name": "Subscriber Kelompok 7",
+        "topic": "pens/klp7/ruang2/#",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 240,
+        "wires": [
+            [
+                "46ff451cd6d91d5f"
+            ]
+        ]
+    },
+    {
+        "id": "ba09646fdbbc55aa",
+        "type": "mqtt out",
+        "z": "8984d1449a19743c",
+        "name": "Publisher Kelompok 7",
+        "topic": "pens/klp7/test",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cabdfbcffdf89581",
+        "x": 560,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "46ff451cd6d91d5f",
+        "type": "debug",
+        "z": "8984d1449a19743c",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "70df47d7018ab314",
+        "type": "inject",
+        "z": "8984d1449a19743c",
+        "name": "Test MQTT Kelompok 7",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "pens/klp7/test",
+        "payload": "Halo dari Node-RED Kelompok 7",
+        "payloadType": "str",
+        "x": 260,
+        "y": 140,
+        "wires": [
+            [
+                "ba09646fdbbc55aa"
+            ]
+        ]
+    },
+    {
+        "id": "23d8eb8b204f21dc",
+        "type": "inject",
+        "z": "8984d1449a19743c",
+        "name": "LED 1 ON",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ON",
+        "payloadType": "str",
+        "x": 260,
+        "y": 320,
+        "wires": [
+            [
+                "c424877a52cf28d0"
+            ]
+        ]
+    },
+    {
+        "id": "c424877a52cf28d0",
+        "type": "mqtt out",
+        "z": "8984d1449a19743c",
+        "name": "",
+        "topic": "pens/klp7/ruang2/led1/set",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cabdfbcffdf89581",
+        "x": 550,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "dc7aa88d64f96905",
+        "type": "inject",
+        "z": "8984d1449a19743c",
+        "name": "LED 1 OFF",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "OFF",
+        "payloadType": "str",
+        "x": 270,
+        "y": 400,
+        "wires": [
+            [
+                "c424877a52cf28d0"
+            ]
+        ]
+    },
+    {
+        "id": "c6dba689a73b3988",
+        "type": "inject",
+        "z": "8984d1449a19743c",
+        "name": "LED 1 ON",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ON",
+        "payloadType": "str",
+        "x": 260,
+        "y": 460,
+        "wires": [
+            [
+                "e825f51a12c9ba94"
+            ]
+        ]
+    },
+    {
+        "id": "8b11a2aafedc21fe",
+        "type": "inject",
+        "z": "8984d1449a19743c",
+        "name": "LED 1 OFF",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "OFF",
+        "payloadType": "str",
+        "x": 270,
+        "y": 540,
+        "wires": [
+            [
+                "e825f51a12c9ba94"
+            ]
+        ]
+    },
+    {
+        "id": "e825f51a12c9ba94",
+        "type": "mqtt out",
+        "z": "8984d1449a19743c",
+        "name": "",
+        "topic": "pens/klp7/ruang2/led2/set",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cabdfbcffdf89581",
+        "x": 550,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "92d18e881d0f3ed6",
+        "type": "inject",
+        "z": "8e25b9e531aaf842",
+        "name": "Timer Simulator Ruang 2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 200,
+        "wires": [
+            [
+                "4debc5a6869bd5c2"
+            ]
+        ]
+    },
+    {
+        "id": "4debc5a6869bd5c2",
+        "type": "function",
+        "z": "8e25b9e531aaf842",
+        "name": "Simulator Sensor Ruang 2",
+        "func": "\n// SIMULATOR SENSOR RUANG 2 - KELOMPOK 7\n\n// Generate suhu antara 24-32 derajat Celsius\nlet temperature = Number((24 + Math.random() * 8).toFixed(1));\n\n// Generate kelembapan antara 50-80 persen\nlet humidity = Math.floor(50 + Math.random() * 31);\n\n// Pesan suhu\nlet msgTemperature = {\n    topic: \"pens/klp7/ruang2/temperature\",\n    payload: temperature\n};\n\n// Pesan kelembapan\nlet msgHumidity = {\n    topic: \"pens/klp7/ruang2/humidity\",\n    payload: humidity\n};\n\n// Kirim dua pesan melalui satu output\nreturn [[msgTemperature, msgHumidity]];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 200,
+        "wires": [
+            [
+                "d57afb727ae31525"
+            ]
+        ]
+    },
+    {
+        "id": "d57afb727ae31525",
+        "type": "mqtt out",
+        "z": "8e25b9e531aaf842",
+        "name": "Publisher Simulator Ruang 2",
+        "topic": "",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cabdfbcffdf89581",
+        "x": 800,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "caf952af3b5e630c",
+        "type": "mqtt in",
+        "z": "8e25b9e531aaf842",
+        "name": "Penerima Data Ruang 1",
+        "topic": "pens/klp7/ruang1/#",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 320,
+        "y": 480,
+        "wires": [
+            [
+                "21a2390f43a4d649"
+            ]
+        ]
+    },
+    {
+        "id": "21a2390f43a4d649",
+        "type": "debug",
+        "z": "8e25b9e531aaf842",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "6559373df351d3a4",
+        "type": "inject",
+        "z": "8e25b9e531aaf842",
+        "name": "Timer Simulator Ruang 3",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 260,
+        "wires": [
+            [
+                "77d4baf8c2bf76ac"
+            ]
+        ]
+    },
+    {
+        "id": "77d4baf8c2bf76ac",
+        "type": "function",
+        "z": "8e25b9e531aaf842",
+        "name": "Simulator Sensor Ruang 3",
+        "func": "\n// SIMULATOR SENSOR RUANG 3 - KELOMPOK 7\n\n// Generate suhu antara 24-32 derajat Celsius\nlet temperature = Number((24 + Math.random() * 8).toFixed(1));\n\n// Generate kelembapan antara 50-80 persen\nlet humidity = Math.floor(50 + Math.random() * 31);\n\n// Pesan suhu\nlet msgTemperature = {\n    topic: \"pens/klp7/ruang3/temperature\",\n    payload: temperature\n};\n\n// Pesan kelembapan\nlet msgHumidity = {\n    topic: \"pens/klp7/ruang3/humidity\",\n    payload: humidity\n};\n\n// Kirim dua pesan melalui satu output\nreturn [[msgTemperature, msgHumidity]];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 260,
+        "wires": [
+            [
+                "fc391c89abb74ed0"
+            ]
+        ]
+    },
+    {
+        "id": "fc391c89abb74ed0",
+        "type": "mqtt out",
+        "z": "8e25b9e531aaf842",
+        "name": "Publisher Simulator Ruang 3",
+        "topic": "",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cabdfbcffdf89581",
+        "x": 800,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "f07987f318b7f69e",
+        "type": "inject",
+        "z": "8e25b9e531aaf842",
+        "name": "Timer Simulator Ruang 4",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 320,
+        "wires": [
+            [
+                "c7be48100b0bee4a"
+            ]
+        ]
+    },
+    {
+        "id": "c7be48100b0bee4a",
+        "type": "function",
+        "z": "8e25b9e531aaf842",
+        "name": "Simulator Sensor Ruang 4",
+        "func": "\n// SIMULATOR SENSOR RUANG 4 - KELOMPOK 7\n\n// Generate suhu antara 24-32 derajat Celsius\nlet temperature = Number((24 + Math.random() * 8).toFixed(1));\n\n// Generate kelembapan antara 50-80 persen\nlet humidity = Math.floor(50 + Math.random() * 31);\n\n// Pesan suhu\nlet msgTemperature = {\n    topic: \"pens/klp7/ruang4/temperature\",\n    payload: temperature\n};\n\n// Pesan kelembapan\nlet msgHumidity = {\n    topic: \"pens/klp7/ruang4/humidity\",\n    payload: humidity\n};\n\n// Kirim dua pesan melalui satu output\nreturn [[msgTemperature, msgHumidity]];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 320,
+        "wires": [
+            [
+                "3eb5b57dcf769bbc"
+            ]
+        ]
+    },
+    {
+        "id": "3eb5b57dcf769bbc",
+        "type": "mqtt out",
+        "z": "8e25b9e531aaf842",
+        "name": "Publisher Simulator Ruang 4",
+        "topic": "",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cabdfbcffdf89581",
+        "x": 800,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "6cdcb31bed4ce290",
+        "type": "inject",
+        "z": "8e25b9e531aaf842",
+        "name": "Timer Simulator Ruang 1",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 140,
+        "wires": [
+            [
+                "3b794724206377b0"
+            ]
+        ]
+    },
+    {
+        "id": "3b794724206377b0",
+        "type": "function",
+        "z": "8e25b9e531aaf842",
+        "name": "Simulator Sensor Ruang 1",
+        "func": "\n// SIMULATOR SENSOR RUANG 1 - KELOMPOK 7\n\n// Generate suhu antara 24-32 derajat Celsius\nlet temperature = Number((24 + Math.random() * 8).toFixed(1));\n\n// Generate kelembapan antara 50-80 persen\nlet humidity = Math.floor(50 + Math.random() * 31);\n\n// Pesan suhu\nlet msgTemperature = {\n    topic: \"pens/klp7/ruang1/temperature\",\n    payload: temperature\n};\n\n// Pesan kelembapan\nlet msgHumidity = {\n    topic: \"pens/klp7/ruang1/humidity\",\n    payload: humidity\n};\n\n// Kirim dua pesan melalui satu output\nreturn [[msgTemperature, msgHumidity]];\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 140,
+        "wires": [
+            [
+                "2faa7df33a09bae7"
+            ]
+        ]
+    },
+    {
+        "id": "2faa7df33a09bae7",
+        "type": "mqtt out",
+        "z": "8e25b9e531aaf842",
+        "name": "Publisher Simulator Ruang 1",
+        "topic": "",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cabdfbcffdf89581",
+        "x": 800,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "fce3d006f363586d",
+        "type": "ui-text",
+        "z": "d2888a2e3bbc694b",
+        "group": "fa4b0259c1e34586",
+        "order": 1,
+        "width": "3",
+        "height": "2",
+        "name": "Suhu Ruang 1",
+        "label": "Suhu Ruang 1 (°C)",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 600,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "d9bb3b81a0f23347",
+        "type": "mqtt in",
+        "z": "d2888a2e3bbc694b",
+        "name": "Data Suhu Ruang 1",
+        "topic": "pens/klp7/ruang1/temperature",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 350,
+        "y": 60,
+        "wires": [
+            [
+                "fce3d006f363586d",
+                "5cf03956e38be510"
+            ]
+        ]
+    },
+    {
+        "id": "ba0c4e40da8c2ef0",
+        "type": "ui-text",
+        "z": "d2888a2e3bbc694b",
+        "group": "fa4b0259c1e34586",
+        "order": 2,
+        "width": "3",
+        "height": "2",
+        "name": "Suhu Ruang 2",
+        "label": "Suhu Ruang 2 (°C)",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 600,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "5d1a162f8b6ab46a",
+        "type": "mqtt in",
+        "z": "d2888a2e3bbc694b",
+        "name": "Data Suhu Ruang 2",
+        "topic": "pens/klp7/ruang2/temperature",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 350,
+        "y": 120,
+        "wires": [
+            [
+                "ba0c4e40da8c2ef0",
+                "5cf03956e38be510"
+            ]
+        ]
+    },
+    {
+        "id": "4936fdfd99ea550d",
+        "type": "mqtt in",
+        "z": "d2888a2e3bbc694b",
+        "name": "Data Humidity Ruang 1",
+        "topic": "pens/klp7/ruang1/humidity",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 340,
+        "y": 400,
+        "wires": [
+            [
+                "6939efdea36a6cc0"
+            ]
+        ]
+    },
+    {
+        "id": "ddbea6791903fa01",
+        "type": "mqtt in",
+        "z": "d2888a2e3bbc694b",
+        "name": "Data Humidity Ruang 2",
+        "topic": "pens/klp7/ruang2/humidity",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 340,
+        "y": 460,
+        "wires": [
+            [
+                "e45638c33313d936"
+            ]
+        ]
+    },
+    {
+        "id": "c768066fdae058a2",
+        "type": "ui-chart",
+        "z": "d2888a2e3bbc694b",
+        "group": "68e89b629b9ecb39",
+        "name": "Grafik Suhu 4 Ruangan",
+        "label": "Monitoring Suhu Realtime (°C)",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "Time",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "Temperature (°C)",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "12",
+        "height": "6",
+        "className": "",
+        "interpolation": "linear",
+        "x": 710,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d3dafdc6ee92dbc6",
+        "type": "ui-text",
+        "z": "d2888a2e3bbc694b",
+        "group": "0606a269c0667ab2",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "name": "Status Ruang 2",
+        "label": "Status ESP32 Ruang 2",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 660,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "b4b6c0c5f4b65e5d",
+        "type": "mqtt in",
+        "z": "d2888a2e3bbc694b",
+        "name": "Status MQTT Ruang 2",
+        "topic": "pens/klp7/ruang2/status",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 380,
+        "y": 700,
+        "wires": [
+            [
+                "d3dafdc6ee92dbc6"
+            ]
+        ]
+    },
+    {
+        "id": "22c9c6d11441dd19",
+        "type": "ui-switch",
+        "z": "d2888a2e3bbc694b",
+        "name": "Kontrol Lampu 1 Ruang 2",
+        "label": "Lampu 1 Ruang 2",
+        "group": "d45eee8820368bcd",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 1010,
+        "y": 180,
+        "wires": [
+            [
+                "707c474ccd36bed5"
+            ]
+        ]
+    },
+    {
+        "id": "707c474ccd36bed5",
+        "type": "mqtt out",
+        "z": "d2888a2e3bbc694b",
+        "name": "Perintah Lampu 1 Ruang 2",
+        "topic": "pens/klp7/ruang2/led1/set",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cabdfbcffdf89581",
+        "x": 1320,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "b633bd589f2d5b89",
+        "type": "ui-switch",
+        "z": "d2888a2e3bbc694b",
+        "name": "Kontrol Lampu 2 Ruang 2",
+        "label": "Lampu 2 Ruang 2",
+        "group": "d45eee8820368bcd",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 1010,
+        "y": 240,
+        "wires": [
+            [
+                "dac96da65222ec09"
+            ]
+        ]
+    },
+    {
+        "id": "dac96da65222ec09",
+        "type": "mqtt out",
+        "z": "d2888a2e3bbc694b",
+        "name": "Perintah Lampu 2 Ruang 2",
+        "topic": "pens/klp7/ruang2/led2/set",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cabdfbcffdf89581",
+        "x": 1320,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "2c3665a86ed57d0e",
+        "type": "mqtt in",
+        "z": "d2888a2e3bbc694b",
+        "name": "MQTT Status Lampu 1 Ruang 2",
+        "topic": "pens/klp7/ruang2/led1/status",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1010,
+        "y": 660,
+        "wires": [
+            [
+                "e62f519c1b987a1f"
+            ]
+        ]
+    },
+    {
+        "id": "3fb9cfaeb4712548",
+        "type": "mqtt in",
+        "z": "d2888a2e3bbc694b",
+        "name": "MQTT Status Lampu 2 Ruang 2",
+        "topic": "pens/klp7/ruang2/led2/status",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1010,
+        "y": 720,
+        "wires": [
+            [
+                "9a8f3abe705a253f"
+            ]
+        ]
+    },
+    {
+        "id": "e62f519c1b987a1f",
+        "type": "ui-text",
+        "z": "d2888a2e3bbc694b",
+        "group": "d9a1cef11dfc343d",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "name": "Text Status Lampu 1 Ruang 2",
+        "label": "Status Lampu 1 Ruang 2",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1330,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "9a8f3abe705a253f",
+        "type": "ui-text",
+        "z": "d2888a2e3bbc694b",
+        "group": "d9a1cef11dfc343d",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "name": "Text Status Lampu 2 Ruang 2",
+        "label": "Status Lampu 2 Ruang 2",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1330,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "5cf03956e38be510",
+        "type": "function",
+        "z": "d2888a2e3bbc694b",
+        "name": "Format Nama Ruangan - Grafik Suhu",
+        "func": "\n// Memeriksa topic suhu dari empat ruangan\nconst match = msg.topic.match(\n    /^pens\\/klp7\\/(ruang[1-4])\\/temperature$/\n);\n\n// Abaikan topic yang tidak sesuai\nif (!match) {\n    return null;\n}\n\n// Mengubah nama topic menjadi nama ruangan\nconst nomorRuang = match[1].replace(\"ruang\", \"\");\n\nmsg.topic = \"Ruang \" + nomorRuang;\n\n// Memastikan payload berupa angka\nmsg.payload = Number(msg.payload);\n\n// Memberikan timestamp untuk grafik\nmsg.timestamp = Date.now();\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 160,
+        "wires": [
+            [
+                "c768066fdae058a2"
+            ]
+        ]
+    },
+    {
+        "id": "6939efdea36a6cc0",
+        "type": "ui-gauge",
+        "z": "d2888a2e3bbc694b",
+        "name": "Gauge Kelembapan Ruang 1",
+        "group": "ffc22011bd4773e7",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "3",
+        "height": "2",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Kelembapan Ruang 1",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "water-percent",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353",
+                "text": "Rendah",
+                "textType": "str"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800",
+                "text": "Sedang",
+                "textType": "str"
+            },
+            {
+                "from": "70",
+                "color": "#5cd65c",
+                "text": "Tinggi",
+                "textType": "str"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 660,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e45638c33313d936",
+        "type": "ui-gauge",
+        "z": "d2888a2e3bbc694b",
+        "name": "Gauge Kelembapan Ruang 2",
+        "group": "ffc22011bd4773e7",
+        "order": 2,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "3",
+        "height": "2",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Kelembapan Ruang 2",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "water-percent",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353",
+                "text": "Rendah",
+                "textType": "str"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800",
+                "text": "Sedang",
+                "textType": "str"
+            },
+            {
+                "from": "70",
+                "color": "#5cd65c",
+                "text": "Tinggi",
+                "textType": "str"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 660,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4d6648b6f222fe81",
+        "type": "ui-gauge",
+        "z": "d2888a2e3bbc694b",
+        "name": "Gauge Kelembapan Ruang 3",
+        "group": "ffc22011bd4773e7",
+        "order": 3,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "3",
+        "height": "2",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Kelembapan Ruang 3",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "water-percent",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353",
+                "text": "Rendah",
+                "textType": "str"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800",
+                "text": "Sedang",
+                "textType": "str"
+            },
+            {
+                "from": "70",
+                "color": "#5cd65c",
+                "text": "Tinggi",
+                "textType": "str"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 660,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0a9fec575a76702c",
+        "type": "ui-gauge",
+        "z": "d2888a2e3bbc694b",
+        "name": "Gauge Kelembapan Ruang 4",
+        "group": "ffc22011bd4773e7",
+        "order": 4,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "3",
+        "height": "2",
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Kelembapan Ruang 4",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "water-percent",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#ea5353",
+                "text": "Rendah",
+                "textType": "str"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800",
+                "text": "Sedang",
+                "textType": "str"
+            },
+            {
+                "from": "70",
+                "color": "#5cd65c",
+                "text": "Tinggi",
+                "textType": "str"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 660,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "827dc9a85cded201",
+        "type": "mqtt in",
+        "z": "d2888a2e3bbc694b",
+        "name": "Data Humidity Ruang 3",
+        "topic": "pens/klp7/ruang3/humidity",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 340,
+        "y": 520,
+        "wires": [
+            [
+                "4d6648b6f222fe81"
+            ]
+        ]
+    },
+    {
+        "id": "2e3b201ce415fa04",
+        "type": "mqtt in",
+        "z": "d2888a2e3bbc694b",
+        "name": "Data Humidity Ruang 4",
+        "topic": "pens/klp7/ruang4/humidity",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 340,
+        "y": 580,
+        "wires": [
+            [
+                "0a9fec575a76702c"
+            ]
+        ]
+    },
+    {
+        "id": "f25e33c237b329bd",
+        "type": "ui-text",
+        "z": "d2888a2e3bbc694b",
+        "group": "fa4b0259c1e34586",
+        "order": 3,
+        "width": "3",
+        "height": "2",
+        "name": "Suhu Ruang 3",
+        "label": "Suhu Ruang 3 (°C)",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 600,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "3de2e24dbf67db73",
+        "type": "ui-text",
+        "z": "d2888a2e3bbc694b",
+        "group": "fa4b0259c1e34586",
+        "order": 4,
+        "width": "3",
+        "height": "2",
+        "name": "Suhu Ruang 4",
+        "label": "Suhu Ruang 4(°C)",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 600,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "d9fb811a45de2a8b",
+        "type": "mqtt in",
+        "z": "d2888a2e3bbc694b",
+        "name": "Data Suhu Ruang 3",
+        "topic": "pens/klp7/ruang3/temperature",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 350,
+        "y": 180,
+        "wires": [
+            [
+                "f25e33c237b329bd",
+                "5cf03956e38be510"
+            ]
+        ]
+    },
+    {
+        "id": "55e3ef40d4a52aaf",
+        "type": "mqtt in",
+        "z": "d2888a2e3bbc694b",
+        "name": "Data Suhu Ruang 4",
+        "topic": "pens/klp7/ruang4/temperature",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 350,
+        "y": 240,
+        "wires": [
+            [
+                "3de2e24dbf67db73",
+                "5cf03956e38be510"
+            ]
+        ]
+    },
+    {
+        "id": "25d9caadb96d0469",
+        "type": "mqtt in",
+        "z": "d2888a2e3bbc694b",
+        "name": "Status MQTT Ruang 3",
+        "topic": "pens/klp7/ruang3/status",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 380,
+        "y": 760,
+        "wires": [
+            [
+                "c291be9d9a0176de"
+            ]
+        ]
+    },
+    {
+        "id": "c291be9d9a0176de",
+        "type": "ui-text",
+        "z": "d2888a2e3bbc694b",
+        "group": "0606a269c0667ab2",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "name": "Status Ruang 3",
+        "label": "Status ESP32 Ruang 3",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 660,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "4a0706a99e47776f",
+        "type": "ui-text",
+        "z": "d2888a2e3bbc694b",
+        "group": "0606a269c0667ab2",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "name": "Status Ruang 4",
+        "label": "Status ESP32 Ruang 4",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 660,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "6789cfd83ae8fd6c",
+        "type": "mqtt in",
+        "z": "d2888a2e3bbc694b",
+        "name": "Status MQTT Ruang 4",
+        "topic": "pens/klp7/ruang4/status",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 380,
+        "y": 820,
+        "wires": [
+            [
+                "4a0706a99e47776f"
+            ]
+        ]
+    },
+    {
+        "id": "e8870a422ca0ef45",
+        "type": "ui-text",
+        "z": "d2888a2e3bbc694b",
+        "group": "0606a269c0667ab2",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "Status Ruang 1",
+        "label": "Status ESP32 Ruang 1",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 660,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "05f747377b62a005",
+        "type": "mqtt in",
+        "z": "d2888a2e3bbc694b",
+        "name": "Status MQTT Ruang 1",
+        "topic": "pens/klp7/ruang1/status",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 380,
+        "y": 640,
+        "wires": [
+            [
+                "e8870a422ca0ef45"
+            ]
+        ]
+    },
+    {
+        "id": "dfb1f7102cbf9741",
+        "type": "ui-switch",
+        "z": "d2888a2e3bbc694b",
+        "name": "Kontrol Lampu 1 Ruang 3",
+        "label": "Lampu 1 Ruang 3",
+        "group": "d45eee8820368bcd",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 1010,
+        "y": 300,
+        "wires": [
+            [
+                "6c8837f7c8c5c265"
+            ]
+        ]
+    },
+    {
+        "id": "6c8837f7c8c5c265",
+        "type": "mqtt out",
+        "z": "d2888a2e3bbc694b",
+        "name": "Perintah Lampu 1 Ruang 3",
+        "topic": "pens/klp7/ruang3/led1/set",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cabdfbcffdf89581",
+        "x": 1320,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "7a3955130397f08f",
+        "type": "ui-switch",
+        "z": "d2888a2e3bbc694b",
+        "name": "Kontrol Lampu 2 Ruang 3",
+        "label": "Lampu 2 Ruang 3",
+        "group": "d45eee8820368bcd",
+        "order": 6,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 1010,
+        "y": 360,
+        "wires": [
+            [
+                "3a9af04756bc5906"
+            ]
+        ]
+    },
+    {
+        "id": "3a9af04756bc5906",
+        "type": "mqtt out",
+        "z": "d2888a2e3bbc694b",
+        "name": "Perintah Lampu 2 Ruang 3",
+        "topic": "pens/klp7/ruang3/led2/set",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cabdfbcffdf89581",
+        "x": 1320,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "b1cd653574a6a280",
+        "type": "ui-switch",
+        "z": "d2888a2e3bbc694b",
+        "name": "Kontrol Lampu 1 Ruang 4",
+        "label": "Lampu 1 Ruang 4",
+        "group": "d45eee8820368bcd",
+        "order": 7,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 1010,
+        "y": 420,
+        "wires": [
+            [
+                "bdfdd0b29c001de3"
+            ]
+        ]
+    },
+    {
+        "id": "bdfdd0b29c001de3",
+        "type": "mqtt out",
+        "z": "d2888a2e3bbc694b",
+        "name": "Perintah Lampu 1 Ruang 4",
+        "topic": "pens/klp7/ruang4/led1/set",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cabdfbcffdf89581",
+        "x": 1320,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "6960a6377e646a2f",
+        "type": "ui-switch",
+        "z": "d2888a2e3bbc694b",
+        "name": "Kontrol Lampu 2 Ruang 4",
+        "label": "Lampu 2 Ruang 4",
+        "group": "d45eee8820368bcd",
+        "order": 8,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 1010,
+        "y": 480,
+        "wires": [
+            [
+                "86377bd42de3659b"
+            ]
+        ]
+    },
+    {
+        "id": "86377bd42de3659b",
+        "type": "mqtt out",
+        "z": "d2888a2e3bbc694b",
+        "name": "Perintah Lampu 2 Ruang 4",
+        "topic": "pens/klp7/ruang4/led2/set",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cabdfbcffdf89581",
+        "x": 1320,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "36e7a92122274bfa",
+        "type": "ui-switch",
+        "z": "d2888a2e3bbc694b",
+        "name": "Kontrol Lampu 1 Ruang 1",
+        "label": "Lampu 1 Ruang 1",
+        "group": "d45eee8820368bcd",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 1010,
+        "y": 60,
+        "wires": [
+            [
+                "e31e8ca8ead170b1"
+            ]
+        ]
+    },
+    {
+        "id": "e31e8ca8ead170b1",
+        "type": "mqtt out",
+        "z": "d2888a2e3bbc694b",
+        "name": "Perintah Lampu 1 Ruang 1",
+        "topic": "pens/klp7/ruang1/led1/set",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cabdfbcffdf89581",
+        "x": 1320,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "79d9db7654d6df65",
+        "type": "ui-switch",
+        "z": "d2888a2e3bbc694b",
+        "name": "Kontrol Lampu 2 Ruang 1",
+        "label": "Lampu 2 Ruang 1",
+        "group": "d45eee8820368bcd",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "ON",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "OFF",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 1010,
+        "y": 120,
+        "wires": [
+            [
+                "4d1aab016410fa71"
+            ]
+        ]
+    },
+    {
+        "id": "4d1aab016410fa71",
+        "type": "mqtt out",
+        "z": "d2888a2e3bbc694b",
+        "name": "Perintah Lampu 2 Ruang 1",
+        "topic": "pens/klp7/ruang1/led2/set",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cabdfbcffdf89581",
+        "x": 1320,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "a7300fa170cfc6df",
+        "type": "ui-text",
+        "z": "d2888a2e3bbc694b",
+        "group": "d9a1cef11dfc343d",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "name": "Text Status Lampu 1 Ruang 1",
+        "label": "Status Lampu 1 Ruang 1",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1330,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "560b9102a1452d4c",
+        "type": "mqtt in",
+        "z": "d2888a2e3bbc694b",
+        "name": "MQTT Status Lampu 1 Ruang 1",
+        "topic": "pens/klp7/ruang1/led1/status",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1010,
+        "y": 540,
+        "wires": [
+            [
+                "a7300fa170cfc6df"
+            ]
+        ]
+    },
+    {
+        "id": "301dd8d04f67d447",
+        "type": "mqtt in",
+        "z": "d2888a2e3bbc694b",
+        "name": "MQTT Status Lampu 2 Ruang 1",
+        "topic": "pens/klp7/ruang1/led2/status",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1010,
+        "y": 600,
+        "wires": [
+            [
+                "ced9ebc1288fe3e8"
+            ]
+        ]
+    },
+    {
+        "id": "ced9ebc1288fe3e8",
+        "type": "ui-text",
+        "z": "d2888a2e3bbc694b",
+        "group": "d9a1cef11dfc343d",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "name": "Text Status Lampu 2 Ruang 1",
+        "label": "Status Lampu 2 Ruang 1",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1330,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "62bb1bf340edf243",
+        "type": "ui-text",
+        "z": "d2888a2e3bbc694b",
+        "group": "d9a1cef11dfc343d",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "name": "Text Status Lampu 1 Ruang 3",
+        "label": "Status Lampu 1 Ruang 3",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1330,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "7cfd2e4f7034430a",
+        "type": "mqtt in",
+        "z": "d2888a2e3bbc694b",
+        "name": "MQTT Status Lampu 1 Ruang 3",
+        "topic": "pens/klp7/ruang3/led1/status",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1010,
+        "y": 780,
+        "wires": [
+            [
+                "62bb1bf340edf243"
+            ]
+        ]
+    },
+    {
+        "id": "f6a7b59b533da42b",
+        "type": "mqtt in",
+        "z": "d2888a2e3bbc694b",
+        "name": "MQTT Status Lampu 2 Ruang 3",
+        "topic": "pens/klp7/ruang3/led2/status",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1010,
+        "y": 840,
+        "wires": [
+            [
+                "606a624b0786e6dd"
+            ]
+        ]
+    },
+    {
+        "id": "606a624b0786e6dd",
+        "type": "ui-text",
+        "z": "d2888a2e3bbc694b",
+        "group": "d9a1cef11dfc343d",
+        "order": 6,
+        "width": "3",
+        "height": "1",
+        "name": "Text Status Lampu 2 Ruang 3",
+        "label": "Status Lampu 2 Ruang 3",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1330,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "3afd5ebc7b5c9e93",
+        "type": "ui-text",
+        "z": "d2888a2e3bbc694b",
+        "group": "d9a1cef11dfc343d",
+        "order": 7,
+        "width": "3",
+        "height": "1",
+        "name": "Text Status Lampu 1 Ruang 4",
+        "label": "Status Lampu 1 Ruang 4",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1330,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "a3ebd80e04519832",
+        "type": "mqtt in",
+        "z": "d2888a2e3bbc694b",
+        "name": "MQTT Status Lampu 1 Ruang 4",
+        "topic": "pens/klp7/ruang4/led1/status",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1010,
+        "y": 900,
+        "wires": [
+            [
+                "3afd5ebc7b5c9e93"
+            ]
+        ]
+    },
+    {
+        "id": "49fc0270a57a2983",
+        "type": "mqtt in",
+        "z": "d2888a2e3bbc694b",
+        "name": "MQTT Status Lampu 2 Ruang 4",
+        "topic": "pens/klp7/ruang4/led2/status",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "cabdfbcffdf89581",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1010,
+        "y": 960,
+        "wires": [
+            [
+                "deda498c3f039aaa"
+            ]
+        ]
+    },
+    {
+        "id": "deda498c3f039aaa",
+        "type": "ui-text",
+        "z": "d2888a2e3bbc694b",
+        "group": "d9a1cef11dfc343d",
+        "order": 8,
+        "width": "3",
+        "height": "1",
+        "name": "Text Status Lampu 2 Ruang 4",
+        "label": "Status Lampu 2 Ruang 4",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 1330,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "563c1184629f918d",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.34.1"
+        }
+    }
+]
