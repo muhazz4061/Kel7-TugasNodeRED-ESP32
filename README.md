@@ -32,8 +32,8 @@ Sistem menggunakan empat ESP32 yang terhubung dengan sensor DHT11 dan dua LED pa
 
 Dokumentasi video proyek:
 
-- **Video Presentasi:** [Masukkan link video presentasi]
-- **Video Demo Alat:** [Masukkan link video demonstrasi]
+- **Video Presentasi:** [[](https://drive.google.com/drive/folders/1RT2AMfo-Zra9BvP4SHZ3NzzjebpV9rRm)]
+- **Video Demo Alat:** [[](https://drive.google.com/drive/folders/1RT2AMfo-Zra9BvP4SHZ3NzzjebpV9rRm)]
 
 ---
 
@@ -133,7 +133,7 @@ Letakkan foto rangkaian aktual pada folder berikut:
 docs/images/rangkaian.jpg
 ```
 
-![Rangkaian ESP32 dan DHT11](docs/images/rangkaian.jpg)
+![Rangkaian ESP32 dan DHT11](docs/images/rangkaian.jpg.jpeg)
 
 *Gambar 1. Rangkaian ESP32, sensor DHT11, dan dua LED.*
 
