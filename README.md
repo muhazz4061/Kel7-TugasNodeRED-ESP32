@@ -33,7 +33,7 @@ Sistem menggunakan empat ESP32 yang terhubung dengan sensor DHT11 dan dua LED pa
 Dokumentasi video proyek:
 
 - **Video Presentasi:** [[](https://drive.google.com/drive/folders/1RT2AMfo-Zra9BvP4SHZ3NzzjebpV9rRm)]
-- **Video Demo Alat:** [[](https://drive.google.com/drive/folders/1RT2AMfo-Zra9BvP4SHZ3NzzjebpV9rRm)]
+- **Video Demo Alat:** [(https://drive.google.com/drive/folders/1RT2AMfo-Zra9BvP4SHZ3NzzjebpV9rRm)]
 
 ---
 
@@ -394,7 +394,7 @@ Flow Node-RED dibangun untuk menjalankan beberapa fungsi utama:
 
 Screenshot Flow:
 
-![Flow Node-RED](docs/images/flow.png)
+![Flow Node-RED](docs/images/flow.jpeg)
 
 *Gambar 2. Flow Node-RED untuk sistem IoT Smart Room.*
 
@@ -413,7 +413,7 @@ Dashboard 2.0 memiliki enam group:
 
 Screenshot Dashboard:
 
-![Dashboard IoT Smart Room](docs/images/dashboard.png)
+![Dashboard IoT Smart Room](docs/images/dashboard.jpeg)
 
 *Gambar 3. Dashboard IoT Smart Room Kelompok 7.*
 
@@ -451,7 +451,7 @@ Screenshot dan foto hasil pengujian disimpan pada folder:
 docs/images/pengujian.png
 ```
 
-![Dokumentasi Pengujian](docs/images/pengujian.png)
+![Dokumentasi Pengujian](docs/images/pengujian.jpeg)
 
 *Gambar 4. Dokumentasi pengujian sistem IoT Smart Room.*
 
