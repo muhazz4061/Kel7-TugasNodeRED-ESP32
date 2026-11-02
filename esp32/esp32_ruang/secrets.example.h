@@ -1,1 +1,2 @@
-
+#define WIFI_SSID "SSID_LAB"
+#define WIFI_PASSWORD "PASSWORD_LAB"
