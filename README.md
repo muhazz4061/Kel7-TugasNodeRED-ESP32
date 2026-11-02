@@ -32,9 +32,7 @@ Sistem menggunakan empat ESP32 yang terhubung dengan sensor DHT11 dan dua LED pa
 
 Dokumentasi video proyek:
 
-- **Video Presentasi:** [[](https://drive.google.com/drive/folders/1RT2AMfo-Zra9BvP4SHZ3NzzjebpV9rRm)]
-- **Video Demo Alat:** [(https://drive.google.com/drive/folders/1RT2AMfo-Zra9BvP4SHZ3NzzjebpV9rRm)]
-
+- **** [[](https://drive.google.com/drive/folders/1RT2AMfo-Zra9BvP4SHZ3NzzjebpV9rRm)]
 ---
 
 ## 4. Arsitektur Sistem
